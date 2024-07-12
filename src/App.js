@@ -1,23 +1,65 @@
-import logo from './logo.svg';
 import './App.css';
+import AdminTest from './components/AdminTest';
+import ClassClick from './components/ClassClick';
+import DataFetchingOne from './components/DataFetchingOne';
+import Formulaire from './components/Formulaire';
+import FunctionClick from './components/FunctionClick';
+import Inline from './components/Inline';
+import NameList from './components/NameList';
+import Newsletter from './components/Newsletter';
+import Stylesheets from './components/Stylesheets';
+import UserGreeting from './components/UserGreeting';
+// import Greet from './components/Greet';
+// import Hero from './components/Hero';
+// import Message from './components/Message';
+// import Welcome from './components/Welcome';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Greet />
+      <Welcome /> */}
+
+      {/* <Greet name="Thomas" age= "30 ans">
+        Thomas est super !
+      </Greet>
+      <Greet name="Toto" age= "90 ans" />
+      <Greet name="John" age= "23 ans" />
+
+      <Hero name="Bruce" hero="Batman" >
+        This is children props
+      </Hero>
+      <Hero name="Clark" hero="Superman" />
+      <Hero name="Diane" hero="Wonder Woman" /> */}
+
+      {/* <Welcome name="Thomas" age="24 ans">
+          ceci est un test !
+      </Welcome>
+      <Welcome name="Titi" age="74 ans" />
+      <Welcome name="Vincent" age="12 ans" /> */}
+
+      {/* <Message />
+
+      <Greet name="Thomas" age="24 ans" />
+      <Greet name="Titi" age="68 ans" />
+      <Greet name="Titi" age="68 ans">
+        texte enfant 
+      </Greet> */}
+
+      {/* <FunctionClick />
+      <ClassClick />
+      <UserGreeting /> */}
+
+      {/* <AdminTest /> */}
+      {/* <NameList /> */}
+      {/* <Inline /> */}
+      {/* <Stylesheets primary={false} /> */}
+      
+      {/* <Formulaire /> */}
+
+      {/* <Newsletter /> */}
+      <DataFetchingOne />
+
     </div>
   );
 }
