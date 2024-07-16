@@ -1,7 +1,10 @@
 import './App.css';
 import AdminTest from './components/AdminTest';
 import ClassClick from './components/ClassClick';
+import DataFetchAll from './components/DataFetchAll';
 import DataFetchingOne from './components/DataFetchingOne';
+import Datafetchtest from './components/Datafetchtest';
+import Film from './components/Film';
 import Formulaire from './components/Formulaire';
 import FunctionClick from './components/FunctionClick';
 import Inline from './components/Inline';
@@ -58,7 +61,12 @@ function App() {
       {/* <Formulaire /> */}
 
       {/* <Newsletter /> */}
-      <DataFetchingOne />
+      {/* <DataFetchingOne /> */}
+      {/* <Film /> */}
+
+      <DataFetchAll />
+
+
 
     </div>
   );
