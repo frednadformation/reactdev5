@@ -4,6 +4,8 @@ import ClassClick from './components/ClassClick';
 import DataFetchAll from './components/DataFetchAll';
 import DataFetchingOne from './components/DataFetchingOne';
 import Datafetchtest from './components/Datafetchtest';
+import DataFetchTodos from './components/DataFetchTodos';
+import DataTodosReducer from './components/DataTodosReducer';
 import Film from './components/Film';
 import Formulaire from './components/Formulaire';
 import FunctionClick from './components/FunctionClick';
@@ -64,7 +66,11 @@ function App() {
       {/* <DataFetchingOne /> */}
       {/* <Film /> */}
 
-      <DataFetchAll />
+      {/* <DataFetchAll /> */}
+
+      {/* <DataFetchTodos /> */}
+
+      <DataTodosReducer />
 
 
 
