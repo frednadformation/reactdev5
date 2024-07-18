@@ -1,0 +1,9 @@
+.grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5px;
+}
+
+.border{
+    border : 2px solid black;
+}
