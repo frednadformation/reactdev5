@@ -33,6 +33,7 @@ import FetchOneContact from './components/Contact/FetchOneContact/FetchOneContac
 import FetchOneBlog from './components/FetchOneBlog/FetchOneBlog';
 import { Button } from './components/Button.style';
 import UpdateContact from './components/Contact/UpdateContact/UpdateContact';
+import Connexion from './components/User/Connexion/Connexion';
 // import Greet from './components/Greet';
 // import Hero from './components/Hero';
 // import Message from './components/Message';
@@ -118,6 +119,8 @@ function App() {
         <Route path='/allblogs' element={<DataFetchBlog />}/>
         <Route path='/blog/:id' element={<FetchOneBlog />}/>
 
+
+        <Route path='/connexion' element={<Connexion />}/>
         <Route path='/*' element={<NotFound />}/>
       </Routes>
 
