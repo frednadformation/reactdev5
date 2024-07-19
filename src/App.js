@@ -4,7 +4,7 @@ import AdminTest from './components/AdminTest';
 import ClassClick from './components/ClassClick';
 import DataFetchAll from './components/DataFetchAll';
 import DataFetchBlog from './components/DataFetchBlog';
-import DataFetchContact from './components/DataFetchContact';
+import DataFetchContact from './components/Contact/DataFetchContact';
 import DataFetchingOne from './components/DataFetchingOne';
 import Datafetchtest from './components/Datafetchtest';
 import DataFetchTodos from './components/DataFetchTodos';
@@ -15,7 +15,7 @@ import Formulaire from './components/Formulaire';
 import FunctionClick from './components/FunctionClick';
 import Inline from './components/Inline';
 import NameList from './components/NameList';
-import NewContact from './components/NewContact';
+import NewContact from './components/Contact/NewContact';
 import Newsletter from './components/Newsletter';
 import Stylesheets from './components/Stylesheets';
 import UserGreeting from './components/UserGreeting';
@@ -26,6 +26,13 @@ import NotFound from './components/NotFound/NotFound';
 import Navbar from './components/Navbar/Navbar';
 import Developpement from './components/Services/Developpement/Developpement';
 import Marketing from './components/Services/Marketing/Marketing';
+import Admin from './components/Admin/Admin';
+import Dashboard from './components/Admin/Dashboard/Dashboard';
+import GestionPost from './components/Admin/GestionPost/GestionPost';
+import FetchOneContact from './components/Contact/FetchOneContact/FetchOneContact';
+import FetchOneBlog from './components/FetchOneBlog/FetchOneBlog';
+import { Button } from './components/Button.style';
+import UpdateContact from './components/Contact/UpdateContact/UpdateContact';
 // import Greet from './components/Greet';
 // import Hero from './components/Hero';
 // import Message from './components/Message';
@@ -95,8 +102,22 @@ function App() {
           <Route path='/services/developpement' element={<Developpement />} />
           <Route path='/services/marketing' element={<Marketing />} />
         </Route>
+
+        <Route path='/admin' element={<Admin />}>
+          <Route path='/admin/dashboard' element={<Dashboard />} />
+          <Route path='/admin/gestionpost' element={<GestionPost />} />
+        </Route>
         <Route path='/profile/:id' element={<Profile />}/>
         
+        <Route path='/allcontacts/' element={<DataFetchContact />} />
+        <Route path='/contact/:id' element={<FetchOneContact />}/>
+        <Route path='/updatecontact' element={<UpdateContact />} />
+        <Route path='/newcontact' element={<NewContact />} />
+
+
+        <Route path='/allblogs' element={<DataFetchBlog />}/>
+        <Route path='/blog/:id' element={<FetchOneBlog />}/>
+
         <Route path='/*' element={<NotFound />}/>
       </Routes>
 

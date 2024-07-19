@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useReducer } from 'react'
+import { Link } from 'react-router-dom'
 
 function DataFetchBlog() {
     const initialState = {
@@ -44,7 +45,9 @@ function DataFetchBlog() {
         {state.loading ? 'Loading...' : state.blogs.map((blog, index)=>{
             return(
                 <div key={index}>
+                <Link to={`/blog/${blog._id}`}>
                     <h1>{blog.sujet}</h1>
+                </Link>
                     <h1>{blog.auteur}</h1>
                     <p>{blog.description}</p>
                     <p>{blog.message}</p>

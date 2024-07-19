@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useReducer } from 'react'
+import { Link } from 'react-router-dom'
 
 function DataFetchContact() {
     const initialState = {
@@ -45,10 +46,15 @@ function DataFetchContact() {
     {state.loading ? 'Loading..' : state.contacts.map((contact, index)=>{
         return(
             <div key={index}>
+            <Link to={"/contact/"+contact._id} >
                 <h1>{contact.nom}</h1>
+            </Link>
+            <Link to={`/contact/${contact._id}`}>
                 <h1>{contact.prenom}</h1>
+            </Link>
                 <p>{contact.email}</p>
                 <p>{contact.message}</p>
+                <p>id contact : {contact._id}</p>
             </div>
         )
 
