@@ -51,6 +51,9 @@ function DataFetchBlog() {
                     <h1>{blog.auteur}</h1>
                     <p>{blog.description}</p>
                     <p>{blog.message}</p>
+                    
+                    {blog.imageName ? <img src={`http://localhost:5000/${blog.imageName}`} width={300} /> : null }
+                    
                 </div>
             )
         })}
