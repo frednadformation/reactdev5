@@ -6,7 +6,6 @@ import DataFetchAll from './components/DataFetchAll';
 import DataFetchBlog from './components/DataFetchBlog';
 import DataFetchContact from './components/Contact/DataFetchContact';
 import DataFetchingOne from './components/DataFetchingOne';
-import Datafetchtest from './components/Datafetchtest';
 import DataFetchTodos from './components/DataFetchTodos';
 import DataResultsReducer from './components/DataResultsReducer';
 import DataTodosReducer from './components/DataTodosReducer';
